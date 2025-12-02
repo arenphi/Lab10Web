@@ -1,0 +1,247 @@
+/* =======================================
+   1. GLOBAL STYLES & LAYOUT
+   ======================================= */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    /* Light grey background */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #34495e;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* WAPPER UTAMA: MENGONTROL LEBAR SEMUA HALAMAN */
+
+.container {
+    max-width: 1100px;
+    /* Lebar maksimum yang konsisten */
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+
+/* KONTEN UTAMA: .main dibuka di header.php */
+
+.main {
+    /* Flex-grow 1 bisa ditambahkan jika perlu */
+}
+
+
+/* WRAPPER KONTEN KHUSUS MODUL (untuk memberi ruang di dalam .main) */
+
+.content {
+    padding: 10px 0;
+}
+
+h1,
+h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+h2 {
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* =======================================
+   2. NAVIGATION (NAV)
+   ======================================= */
+
+nav {
+    background-color: #3498db;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nav-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+
+/* =======================================
+   3. FOOTER
+   ======================================= */
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+
+/* =======================================
+   4. FORM & INPUT STYLES
+   ======================================= */
+
+.input {
+    margin-bottom: 15px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input input[type="text"],
+.input input[type="number"],
+.input input[type="file"],
+.input select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+
+/* =======================================
+   5. BUTTONS (BTN)
+   ======================================= */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+.toolbar {
+    margin-bottom: 20px;
+}
+
+
+/* =======================================
+   6. TABLE & LIST STYLES (CRUD READ)
+   ======================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ecf0f1;
+    text-align: left;
+}
+
+table th {
+    background-color: #ecf0f1;
+    color: #34495e;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f0f4f7;
+}
+
+.thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.thumb-preview {
+    max-width: 200px;
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.noimg {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #ecf0f1;
+    border: 1px dashed #bdc3c7;
+    border-radius: 4px;
+    font-style: italic;
+    color: #95a5a6;
+    font-size: 12px;
+}
+
+.link {
+    color: #3498db;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.del {
+    color: #e74c3c;
+}
